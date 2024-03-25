@@ -51,7 +51,7 @@ nav ul li a {
   text-decoration: none;
   color: var(--var-text-color-dark);
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 nav ul li a:hover {
@@ -86,8 +86,8 @@ main {
 #hello {
   width: 100%;
   height: 70vh;
-  border-radius: 0.3rem;
-  padding: 0.5rem;
+  border-radius: 5px;
+  padding: 1rem;
   background: linear-gradient(
     90deg,
     var(--var-bg-dark) 25%,
@@ -99,7 +99,7 @@ main {
   align-items: center;
 }
 
-#hello .centro h2 {
+#hello .sinistra h2 {
   font-size: 3rem;
   font-weight: 900;
   color: var(--var-text-color);
@@ -112,18 +112,17 @@ main {
 #hello .sinistra p {
   font-size: clamp(1rem, 2vw, 1rem);
   color: var(--var-text-color);
-  font-size:  1.3rem;
 }
 
 .sinistra button {
   background-color: var(--var-second-color);
   color: var(--var-text-color);
+  margin-top: 1.4rem;
   border-radius: 0.6rem;
   padding: 0.3rem 1rem;
   font-weight: 700;
   cursor: pointer;
   transition: 0.3s;
-  margin-top: 2rem;
 }
 
 .sinistra button:hover {
@@ -181,18 +180,19 @@ main {
   right: 300px;
 }
 
+
 @keyframes animation {
   30% {
-    transform: translatex(100%);
+    transform: translatex(50%);
   }
   50% {
     transform: translate(10%);
   }
-  50% {
-    transform: translate(100%);
+  20% {
+    transform: translate(90%);
   }
   50% {
-    transform: translatez(10%);
+    transform: translatez(90%);
   }
   80% {
     transform: translatey(80%);
