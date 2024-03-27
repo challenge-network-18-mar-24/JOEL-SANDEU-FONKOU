@@ -38,6 +38,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
 }
 
 header nav ul {
@@ -148,7 +149,7 @@ main {
   background: linear-gradient(90deg, var(--var-bg-color) 15%, #049417 100%);
   position: absolute;
   left: 10px;
-  animation-delay: 0.1s;
+  animation-delay: 0s;
 }
 
 .circle:nth-child(2) {
@@ -162,8 +163,8 @@ main {
   background: linear-gradient(90deg, var(--var-bg-color) 15%, #e2c209 100%);
   position: absolute;
   bottom: 100px;
-  right: 270px;
-  animation-delay: 0.5s;
+  right: 200px;
+  animation-delay: 0.6s;
 }
 
 
@@ -172,16 +173,16 @@ main {
     transform: translatex(50%);
   }
   50% {
-    transform: translate(10%);
-  }
-  20% {
-    transform: translate(90%);
+    transform: translate(30%);
   }
   50% {
+    transform: translate(90%);
+  }
+  100% {
     transform: translatez(90%);
   }
   80% {
-    transform: translatey(80%);
+    transform: translatey(90%);
   }
 }
 
@@ -271,7 +272,7 @@ main {
     
 }
 
-#contact .about-us, .contact {
+.card {
     flex: 1;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -299,12 +300,9 @@ main {
 
 .contact form {
     width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  
-  
     
+    display: flex;
+    flex-direction: column;   
 }
 
 .contact form input, textarea {
@@ -350,11 +348,65 @@ footer{
   background-color: rgb(119, 91, 155);
   margin-top: 2rem;
   display: flex;
-  justify-content: center;
- align-items: center;
+  justify-content:space-between;
+  align-items: center;
   color: var(--var-text-color);
   padding: 1rem;
   border-radius: 5px;
 }
 
+footer img {
+  margin-left: 2rem;
+}
+
+footer h1 {
+  margin-right: 2rem;
+}
+
+/*ico*/
+.social {
+  position: fixed;
+  right: 0;
+  bottom: 10rem;
+}
+
+.social .ico {
+  width: 45px;
+  height: 45px;
+  padding: 0.7rem;
+}
+
+/*mobile system*/
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  main {
+    padding: 1ren;
+
+  }
+  #hello{
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 10px;
+  }
+  .sinistra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #hello .sinistra h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .services-list{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #contact{
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}
 
