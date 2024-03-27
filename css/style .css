@@ -347,13 +347,14 @@ main {
 footer{
   width: 100%;
   height: 150px;
-  background-color: var(--var-text-color);
+  background-color: rgb(119, 91, 155);
   margin-top: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
  align-items: center;
-  color: var(--var-bg-color);
+  color: var(--var-text-color);
+  padding: 1rem;
+  border-radius: 5px;
 }
-
 
 
