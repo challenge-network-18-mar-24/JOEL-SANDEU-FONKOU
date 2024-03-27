@@ -402,11 +402,18 @@ footer h1 {
   }
   .services-list{
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
   #contact{
-    min-height: 100vh;
+    min-height: 188vh;
     flex-direction: column;
+  }
+  footer p {
+    display: none;
+  }
+  footer h1 {
+    text-align: center;
+
   }
 }
 
