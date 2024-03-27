@@ -114,29 +114,13 @@ main {
   color: var(--var-text-color);
 }
 
-.sinistra button {
-  background-color: var(--var-second-color);
-  color: var(--var-text-color);
-  margin-top: 1.4rem;
-  border-radius: 0.6rem;
-  padding: 0.3rem 1rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.sinistra button:hover {
-  background-color: var(--var-text-color);
-  color: var(--var-text-color-dark);
-  border: 1px solid var(--var-second-color);
-}
-
 .imgs {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .imgs img {
@@ -157,27 +141,29 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-
-  animation: animation 4s ease-in-out infinite;
+  animation: animation 6s ease-in-out infinite;
 }
 
 .circle:nth-child(1) {
-  background: linear-gradient(90deg, var(--var-bg-color) 15%, #8271b8 100%);
+  background: linear-gradient(90deg, var(--var-bg-color) 15%, #049417 100%);
   position: absolute;
-  left: 120px;
+  left: 10px;
+  animation-delay: 0.1s;
 }
 
 .circle:nth-child(2) {
-  background: linear-gradient(90deg, var(--var-bg-color) 15%, #8271b8 100%);
+  background: linear-gradient(90deg, var(--var-bg-color) 15%, #bb0a18 100%);
   position: absolute;
-  right: 200px;
+  right: 80px;
+  animation-delay: 0.3s;
 }
 
 .circle:nth-child(3) {
-  background: linear-gradient(90deg, var(--var-bg-color) 15%, #8271b8 100%);
+  background: linear-gradient(90deg, var(--var-bg-color) 15%, #e2c209 100%);
   position: absolute;
-  bottom: 180px;
-  right: 300px;
+  bottom: 100px;
+  right: 270px;
+  animation-delay: 0.5s;
 }
 
 
@@ -209,11 +195,12 @@ main {
   font-weight: 900;
   color: var(--var-text-color-dark);
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .tof {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -276,23 +263,25 @@ main {
 /* contact*/
 
 #contact {
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
-    height: calc(100vh-200px);
+    height: calc(100vh - 200px);
     background-color: #fff;
+    border-radius: 5px;
     
 }
 
-#contact .about-us .contact {
+#contact .about-us, .contact {
     flex: 1;
     border-radius: 5px;
     margin-bottom: 1rem;
     position: relative;
     padding: 1rem;
+    height: 100%;
 }
 
 #contact .about-us{
-    background-color: #9f94c5;
+    background-color: #aea7c7;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -300,7 +289,7 @@ main {
     border-radius: 5px
 }
 
-#about-us h2 {
+#contact h2 {
     font-size: 2rem;
     font-weight: 900;
     color: var(--var-text-color-dark);
@@ -313,19 +302,58 @@ main {
     margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+  
+    
 }
 
 .contact form input, textarea {
     width: 100%;
-    padding: 0.8 1rem;
+    padding: 0.8em 1rem;
+    border: none;
     border: 1px solid #ccc;
     margin-bottom: 1rem;
     outline: none;
     border-radius: 5px;
     font-size: 1rem;
+    transition: 0.3s;
 }
 
 .contact form textarea {
     height: 100px;
 }
+
+.contact form input:focus, textarea:focus{
+  border: 1px solid var(--var-bg-color);
+}
+
+.contact form button {
+  background-color: var(--var-second-color);
+  color: var(--var-text-color);
+  border-radius: 0.6rem;
+  padding: 0.3rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact form button:hover {
+  background-color: var(--var-text-color);
+  color: var(--var-text-color-dark);
+  border: 1px solid var(--var-second-color);
+}
+
+/*footer*/
+footer{
+  width: 100%;
+  height: 100%;
+  background-color: var(--var-text-color);
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--var-bg-color);
+}
+
+
 
